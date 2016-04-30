@@ -33,6 +33,7 @@ tw["AS"] = '5UDAsMaYPJjrNvuR1dsJBOgxxSDGev33JnjXnheApGLkk'      # Accesss Token 
 
 # ツイート投稿用のURL
 tw["url"] = "https://api.twitter.com/1.1/statuses/update.json"
+# センシングログ登録用URL
 post_url = "http://rest.example.com/"
 
 #-------------------------------------------------------
