@@ -7,6 +7,8 @@ import time
 import json
 from requests_oauthlib import OAuth1Session
 from math import *
+import pprint
+import requests
 
 bus_number  = 1
 i2c_address = 0x76
@@ -31,7 +33,7 @@ tw["AS"] = '5UDAsMaYPJjrNvuR1dsJBOgxxSDGev33JnjXnheApGLkk'      # Accesss Token 
 
 # ツイート投稿用のURL
 tw["url"] = "https://api.twitter.com/1.1/statuses/update.json"
-
+post_url = "http://rest.example.com/"
 
 #-------------------------------------------------------
 #
@@ -220,6 +222,22 @@ def addlog(filename):
 #-------------------------------------------------------
 #
 #-------------------------------------------------------
+def do_post(url):
+#	print url
+	#POSTパラメータは二つ目の引数に辞書で指定する
+	response = requests.post(
+		url,
+		json.dumps(weather),
+		headers={'Content-Type': 'application/json'})
+	#レスポンスオブジェクトのjsonメソッドを使うと、
+	#JSONデータをPythonの辞書オブジェクトに変換して取得できる
+#	pprint.pprint(response)
+#	pprint.pprint(response.json())
+#	print response
+
+#-------------------------------------------------------
+#
+#-------------------------------------------------------
 setup()
 get_calib_param()
 
@@ -238,4 +256,4 @@ if __name__ == '__main__':
 	if x == 0:
 		do_tw()
 
-
+	do_post(post_url)
