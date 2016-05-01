@@ -224,12 +224,14 @@ def addlog(filename):
 #
 #-------------------------------------------------------
 def do_post(url):
-#	print url
 	#POSTパラメータは二つ目の引数に辞書で指定する
-	response = requests.post(
-		url,
-		json.dumps(weather),
-		headers={'Content-Type': 'application/json'})
+	try:
+		response = requests.post(
+			url,
+			json.dumps(weather),
+			headers={'Content-Type': 'application/json'})
+	finally:
+		pass
 	#レスポンスオブジェクトのjsonメソッドを使うと、
 	#JSONデータをPythonの辞書オブジェクトに変換して取得できる
 #	pprint.pprint(response)
@@ -258,3 +260,4 @@ if __name__ == '__main__':
 		do_tw()
 
 	do_post(post_url)
+
