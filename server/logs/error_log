@@ -1,3 +1,0 @@
-[Sat Apr 30 14:38:20.479265 2016] [:error] [pid 25198] [client 192.168.100.103:51098] PHP Warning:  error_log(../dumper.log): failed to open stream: Permission denied in /home/sites/rest.example.com/server/web/index.php on line 6
-[Sat Apr 30 14:39:03.407388 2016] [:error] [pid 25199] [client 192.168.100.103:51099] PHP Warning:  error_log(../logs/dumper.log): failed to open stream: Permission denied in /home/sites/rest.example.com/server/web/index.php on line 6
-[Sat Apr 30 14:39:30.807147 2016] [:error] [pid 25200] [client 192.168.100.103:51100] PHP Warning:  error_log(/home/sites/rest.example.com/server/logs/dumper.log): failed to open stream: Permission denied in /home/sites/rest.example.com/server/web/index.php on line 6
