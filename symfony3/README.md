@@ -4,6 +4,7 @@
 A Symfony project created on May 5, 2016, 4:47 pm.
 
 .add project
+=========
 php ./bin/console generate:bundle --namespace=Weather/RestBundle
 ```
 ./src/
@@ -35,4 +36,5 @@ php ./bin/console generate:bundle --namespace=Weather/RestBundle
 ```
 
 .add table
+=========
 php bin/console doctrine:schema:create
