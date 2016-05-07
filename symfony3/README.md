@@ -5,7 +5,7 @@ A Symfony project created on May 5, 2016, 4:47 pm.
 
 .add project
 php ./bin/console generate:bundle --namespace=Weather/RestBundle
-
+```
 ./src/
 ./src/.htaccess
 ./src/AppBundle
@@ -32,7 +32,7 @@ php ./bin/console generate:bundle --namespace=Weather/RestBundle
 ./src/Weather/RestBundle/Resources/config
 ./src/Weather/RestBundle/Resources/config/services.yml
 ./src/Weather/RestBundle/Resources/config/routing.yml
-
+```
 
 .add table
 php bin/console doctrine:schema:create
