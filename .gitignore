@@ -1,2 +1,4 @@
-server/var/cache/*
+server/composer.lock
+server/var/cache/prod
+server/var/cache/dev
 server/vendor/*
