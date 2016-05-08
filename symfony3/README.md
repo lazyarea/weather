@@ -82,3 +82,10 @@ MariaDB [symfony]> desc product;
 | name  | varchar(255) | YES  |     | NULL    |                |
 +-------+--------------+------+-----+---------+----------------+
 ```
+.check doctrine mapping infomation
+=========
+php bin/console doctrine:mapping:info
+```
+Found 1 mapped entities:
+[OK]   AppBundle\Entity\Product
+```
