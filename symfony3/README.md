@@ -35,6 +35,42 @@ php ./bin/console generate:bundle --namespace=Weather/RestBundle
 ./src/Weather/RestBundle/Resources/config/routing.yml
 ```
 
+
+.add database
+=========
+php bin/console doctrine:database:create
+
+.add table schema
+=========
+php bin/console doctrine:generate:entity
+```
+The Entity shortcut name: AppBundle:Product
+
+Determine the format to use for the mapping information.
+
+Configuration format (yml, xml, php, or annotation) [annotation]:
+
+Instead of starting with a blank entity, you can add some fields now.
+Note that the primary key will be added automatically (named id).
+
+Available types: array, simple_array, json_array, object,
+boolean, integer, smallint, bigint, string, text, datetime, datetimetz,
+date, time, decimal, float, binary, blob, guid.
+
+New field name (press <return> to stop adding fields): name
+Field type [string]:
+Field length [255]:
+Is nullable [false]: true
+Unique [false]:
+```
+
 .add table
 =========
 php bin/console doctrine:schema:create
+```
+ATTENTION: This operation should not be executed in a production environment.
+
+Creating database schema...
+Database schema created successfully!
+```
+
