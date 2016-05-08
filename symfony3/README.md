@@ -73,4 +73,12 @@ ATTENTION: This operation should not be executed in a production environment.
 Creating database schema...
 Database schema created successfully!
 ```
-
+```
+MariaDB [symfony]> desc product;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| id    | int(11)      | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(255) | YES  |     | NULL    |                |
++-------+--------------+------+-----+---------+----------------+
+```
